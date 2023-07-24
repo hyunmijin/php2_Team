@@ -1,4 +1,4 @@
-<h1>PHP를 사용해 만든 blog</h1>
+<h1>PHP를 사용해 만든 TEAM PROJECT입니다.</h1>
 
 site : http://dkzmfla1215.dothome.co.kr/php2/main/main.php
 <br><br>
