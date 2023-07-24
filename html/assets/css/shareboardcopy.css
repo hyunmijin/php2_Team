@@ -1,0 +1,325 @@
+.shareboard__inner {
+    width: 1270px;
+    /* background-color: pink; */
+    /* margin: 0 auto; */
+}
+
+.intro__inner h2 {
+    font-weight: bold;
+}
+
+.shareboard {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.shareboard__view {
+    /* border-bottom: 1px solid #d4d4d4; */
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    height: 488px;
+    margin-bottom: 80px;
+}
+
+.shareboard__view .img {
+    width: 48%;
+}
+
+.shareboard__view img {
+    width: 100%;
+}
+.shareboard__view .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* text */
+.shareboard__view .text {
+    width: 48%;
+    height: 100%;
+    /* background-color: #ccc; */
+}
+
+.shareboard__view .text .profile {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    margin-bottom: 5%;
+}
+
+.shareboard__view .text .profile .sec1 {
+    display: flex;
+}
+
+.shareboard__view .text .profile .sec1 img {
+    padding-right: 10px;
+}
+
+.shareboard__view .text .profile .sec1 p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* title */
+.shareboard__view .title h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 6%;
+    /* margin-top: 15%; */
+    height: 55px;
+}
+
+/* desc */
+.shareboard__view .desc {
+    max-height: 330px;
+    min-height: 354px;
+    overflow: auto;
+    overflow-y: scroll;
+    background-color: #f797a24f;
+    padding: 20px;
+}
+
+.shareboard__view .desc::-webkit-scrollbar-track {
+    max-height: 360px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    background-color: #FAFAFA;
+}
+
+.shareboard__view .desc::-webkit-scrollbar {
+    width: 8px;
+    background-color: #F5F5F5;
+}
+
+.shareboard__view .desc::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #EAAFC8;
+}
+
+
+/* shareboard_list */
+.shareboard_list {
+    margin-top: -70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.shareboard_list .list a {
+    position: relative;
+}
+.shareboard_list .list a img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.shareboard_list .list a::before {
+    content: "다른 게시물 보러가기";
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* 검정색(0, 0, 0)의 투명도 50% (0.5) */
+    opacity: 0;
+    /* 초기에는 투명도를 0으로 설정합니다 */
+    transition: opacity 0.3s ease-in-out;
+    /* 투명도 전환 효과를 설정합니다 */
+}
+
+.shareboard_list .list a:hover::before {
+    opacity: 1;
+}
+
+.shareboard_list .list {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shareboard_list img {
+    width: 130%;
+}
+
+.shareboard_list .btn {
+    align-items: end;
+    margin-top: 30px;
+    display: flex;
+    /* background-color: #ccc; */
+}
+
+.btnStyle4 {
+    /* margin-bottom: 0 !important; */
+}
+
+/* shareboard_comment */
+.shareboard_comment {
+    margin-top: 5%;
+}
+
+.shareboard_comment h4 {
+    margin-bottom: 2%;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.shareboard_comment .view {
+    display: flex;
+    padding: 3% 0;
+    justify-content: space-between;
+}
+
+.shareboard_comment .view .text {
+    /* background-color: #ccc; */
+    margin-right: 580px;
+}
+
+.shareboard_comment .view .edit {
+    margin-top: 30px;
+}
+
+.shareboard_comment img {
+    width: 5%;
+}
+
+.shareboard_comment .view>div {
+    margin-left: 10px;
+}
+
+.shareboard_comment .view>div h6 {
+    font-weight: bold;
+}
+
+.shareboard_comment .view>div p {
+    font-weight: lighter;
+}
+
+.shareboard_comment .white {
+    margin-top: 30px;
+}
+
+.shareboard_comment .white .text #boardcomment {
+    padding: 15px;
+    font-weight: bold;
+}
+
+/* end */
+.shareboard_comment .white .end {
+    /* background-color: #ccc; */
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px 0px;
+    margin-bottom: 50px;
+}
+
+.shareboard_comment .white .end label {
+    font-size: 14px;
+}
+
+.shareboard_comment .white .end .btn {
+    width: 20%;
+}
+
+/* view__num */
+.view__num {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 100px;
+    margin-top: 40px;
+}
+
+.view__num .num {
+    height: 40px;
+    /* margin-bottom: 90px; */
+    display: flex;
+}
+
+.view__num .num>h3 {
+    font-size: 16px;
+    font-weight: bold;
+    padding-right: 40px;
+}
+
+.view__num .num>h4 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.view__num .num>h4 span {
+    font-size: 12px;
+}
+
+
+.view__num .edit a {
+    /* background-color: #ccc; */
+    padding-bottom: 20px;
+}
+
+.list__inner .btn {
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: -30px; */
+}
+
+.list__inner .btn a {
+    color: #fff;
+}
+
+
+.board__write {
+    padding: 50px 0 100px;
+    width: 100%;
+}
+.board__write label {
+    width: 100%;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.board__write .mt30 #blogFile {
+    border-radius: 0;
+    /* margin-bottom: 50px; */
+    /* background-image: url(../img/board_icon01\ 2.png); */
+    background-size: cover; /* 이미지를 버튼에 맞게 조절 */
+    /* width: 100px; 버튼의 너비 */
+    height: 40px; /* 버튼의 높이 */
+    border: none; /* 테두리 제거 */
+    cursor: pointer; /* 마우스 커서를 포인터로 변경하여 클릭 가능한 버튼으로 표시 */
+    z-index: 100000;
+}
+.board__write textarea {
+    padding: 2em;
+    resize: none;
+}
+.board__write .mt30 button {
+    width: 10%;
+    float: right;
+    margin-top: 10px;
+}
+
+/* 이미지 사이즈 */
+.list .list__each .list__img {
+    width: 100%;
+    height:100%;
+}
+.list__each .list__img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,219 @@
+/* 여백 초기화 */
+body,
+div,
+dl,
+dd,
+dt,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+p,
+table,
+th,
+td,
+input,
+figure,
+figcaption,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+/* box-sizing 초기화 */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* scroll start */
+body #scroll::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  background-color: #fafafa;
+}
+body #scroll::-webkit-scrollbar {
+  width: 8px;
+  background-color: #f5f5f5;
+}
+body #scroll::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #eaafc8;
+}
+/* scroll end */
+/* 폰트 초기화 */
+body,
+button,
+input,
+select,
+table,
+textarea {
+  font-family: var(--main__win), "AppleSDGothicNeo-Regular", "Malgun Gothic",
+    "맑은 고딕", "dotum", "돋움";
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+  word-break: keep-all;
+}
+body.windows button,
+body.windows input,
+body.windows select,
+body.windows table,
+body.windows textarea {
+  font-family: var(--main__win);
+}
+
+/* 링크 초기화 */
+a {
+  text-decoration: none;
+  color: var(--color__black);
+}
+
+/* 목록 초기화 */
+li,
+ol,
+ul {
+  list-style: none;
+}
+/* 제목 초기화 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: var(--font__size);
+}
+
+/* 테이블 초기화 */
+table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+/* 폰트 스타일 */
+em,
+address {
+  font-style: normal;
+}
+/* 이미지 초기화 */
+img {
+  width: 100%;
+  vertical-align: top;
+}
+/* 보더 초기화 */
+img,
+fieldset,
+button {
+  border: 0;
+}
+/* 클리어 픽스 */
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: block;
+  line-height: 0;
+}
+.clearfix::after {
+  clear: both;
+}
+/* 블라인드 효과 */
+.blind {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+/* ir 효과 */
+.ir {
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+/* 간격설정 */
+.mt10 {
+  margin-top: 10px !important;
+}
+.mt20 {
+  margin-top: 20px !important;
+}
+.mt30 {
+  margin-top: 30px !important;
+}
+.mt40 {
+  margin-top: 40px !important;
+}
+.mt50 {
+  margin-top: 50px !important;
+}
+.mt60 {
+  margin-top: 60px !important;
+}
+.mt70 {
+  margin-top: 70px !important;
+}
+.mt80 {
+  margin-top: 80px !important;
+}
+.mt90 {
+  margin-top: 90px !important;
+}
+.mt100 {
+  margin-top: 100px !important;
+}
+.mt110 {
+  margin-top: 110px !important;
+}
+.mt120 {
+  margin-top: 120px !important;
+}
+
+.mb10 {
+  margin-bottom: 10px !important;
+}
+.mb20 {
+  margin-bottom: 20px !important;
+}
+.mb30 {
+  margin-bottom: 30px !important;
+}
+.mb40 {
+  margin-bottom: 40px !important;
+}
+.mb50 {
+  margin-bottom: 50px !important;
+}
+.mb60 {
+  margin-bottom: 60px !important;
+}
+.mb70 {
+  margin-bottom: 70px !important;
+}
+.mb80 {
+  margin-bottom: 80px !important;
+}
+.mb90 {
+  margin-bottom: 90px !important;
+}
+.mb100 {
+  margin-bottom: 100px !important;
+}

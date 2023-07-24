@@ -1,0 +1,127 @@
+.search__tot{
+    /* width: 30%; */
+    align-items: flex-end;
+}
+.search__tot p{
+    display: inline-block;
+    align-items: flex-end;
+
+}
+.search__btn__inner{
+    /* width: 70%; */
+
+}
+.search__btn__inner fieldset{
+    display: flex;
+    align-items: flex-end;
+}
+.search__btn__inner fieldset > div {
+    padding-left: 5px;
+}
+
+.board__search{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* width: 100%; */
+}
+
+.inputSearchStyle{
+    display: inline-block;
+    background-color: #fff;
+    text-align: center;
+    width: 20em;
+    border-radius: 5px;
+    padding: 0.75em 0em;
+    /* border: 0; */
+}
+
+.board__table tr, 
+.board__table th, 
+.board__table td{
+    border-bottom: solid 1px #000;
+    
+}
+.board__table{
+    width: 100%;
+    border-collapse : collapse;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    /* border-top: solid 5px #000; */
+    
+    width: 100%;
+    text-align: center;
+    /* align-items: center; */
+}
+.board__table{
+}
+.board__table2{
+    /* align-items: center; */
+    /* border: solid 1px #adadad; */
+    width: 100%;
+}
+.board__table2 tr, 
+.board__table2 th, 
+.board__table2 td{
+    border: solid 1px #adadad;
+}
+.board__table td{
+    padding: 1em;
+}
+.table__th__1{
+    width: 15%;
+    padding: 1em;
+}
+.table__th__2{
+    width: 45%;
+    padding: 1em;
+}
+.table__th__3{
+    width: 15%;
+    padding: 1em;
+}
+.table__th__4{
+    width: 15%;
+    padding: 1em;
+}
+.table__th__5{
+    width: 15%;
+    padding: 1em;
+}
+.table__th__home ,
+.table__th__end{
+    width: 15%;
+    padding: 1em;
+}
+.table__th__next,
+.table__th__before{
+    width: 20%;
+}
+.table__th__num {
+    width: 3%;
+}
+.board__nav {
+    margin: 5vw;
+    text-align: center;
+}
+.board__nav button {
+    display: inline-block;
+    margin-left: -5px;
+    border: 1px solid #adadad;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.footer__inner {
+    width: 1260px;
+    margin: 0 auto;
+    height: 100px;
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    color: #adadad;
+}
+.footer__inner p:nth-child(2){
+    text-align: right;
+}

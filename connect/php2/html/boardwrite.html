@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시글 작성하기</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- SCRIPT -->
+    <script defer src="assets/js/common.js"></script>
+
+    <style>
+        #board__header {
+            width: 100%;
+            display: flex;
+            width: 100%;
+            max-width: 480px;
+            margin: 0 auto;
+            justify-content: space-between;
+            font-size: 25px;
+        }
+
+        #board__header .active a {
+            padding: 5px 30px;
+            background-color: #F06171;
+            color: #fff;
+            border-radius: 10px;
+            /* padding:  0px 40px; */
+        }
+
+        input {
+            border-radius: 8px;
+        }
+
+        textarea {
+            border-radius: 8px;
+        }
+
+        .notice__inner {
+            margin: 0 auto;
+            width: 1270px;
+        }
+
+        .notice__title h1 {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .intro__inner h2 {
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .board__title {
+            margin-bottom: 30px;
+        }
+
+        .btn__inner {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .btn__inner img {
+            display: block;
+            padding-top: 6px;
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body class="white">
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#main">컨텐츠 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+
+    <main id="main" class=" mt80">
+        <header id="header">
+            <div class="header__inner">
+                <div class="kategorie">
+                    <div class="kategorie__menu">
+                        <img src="assets/img/kategorie.png" alt="">
+                    </div>
+                    <ul>
+                        <li><a href="#">기초</a></li>
+                        <li><a href="#">마스크팩</a></li>
+                        <li><a href="#">선케어</a></li>
+                        <li><a href="#">클렌징</a></li>
+                        <li><a href="#">메이크업</a></li>
+                        <li><a href="#">헤어</a></li>
+                        <li><a href="#">바디</a></li>
+                        <li><a href="#">커뮤니티</a></li>
+                    </ul>
+                </div>
+                <div class="logo">
+                    <h1>
+                        <a href="#"></a>
+                    </h1>
+                </div>
+                <div class="user">
+                    <a href="#">
+                        <img src="assets/img/user.png" alt="">
+                    </a>
+                    <ul>
+                        <li><a href="#">마이페이지</a></li>
+                        <li><a href="#">로그아웃</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- //header -->
+        <!-- //header -->
+        <div id="board__header" class="mt100">
+            <div><a href="trendsBoard.html">뷰티트렌드</a></div> <!-- news-->
+            <div><a href="shareBoard.html">공유게시판</a></div> <!-- share-->
+            <div class="active"><a href="boardNotice.html">공지사항</a></div> <!-- notice-->
+            <div><a href="FAQ.html">FAQ</a></div> <!-- faq-->
+        </div>
+        <!-- board__header -->
+        <div class="notice__inner mt100">
+            <div class="intro__inner center">
+                <h2>게시글 작성하기</h2>
+            </div>
+            <!-- intro__text -->
+
+            <div class="board__inner">
+                <div class="board__write">
+                    <form action="#" name="#" method="post">
+                        <fieldset>
+                            <legend class="blind">게시글 작성하기</legend>
+                            <div>
+                                <label for="boardTitle">제목</label>
+                                <input type="text" id="board__title" name="boardTitle" class="inputStyle1 board__title">
+                            </div>
+                            <div>
+                                <label for="boardContents">내용</label>
+                                <textarea name="boardContents" id="boardContents" rows="20"
+                                    class="inputStyle2 board__contents"></textarea>
+                            </div>
+                            <div class="btn__inner mb100">
+                                <!-- 이미지첨부 임시로 a태그 사용 -->
+                                <a href="#"><img src="assets/img/board_icon01.svg" alt="사진첨부"></a>
+                                <button type="submit" class="btnStyle5">작성하기</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- main -->
+    <footer id="footer">
+        <div class="footer__inner">
+            <div class="logo2">
+                <h1>ABB
+                    <p>COMMUNITY</p>
+                </h1>
+
+            </div>
+            <div class="fot">
+                <div class="nav">
+                    <ul>
+                        <li>뉴스보기</li>
+                        <li>공유게시판</li>
+                        <li>정보보기</li>
+                        <li>FAQ</li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <p>COPYRIGHT©ABB</p>
+                    <p>ALL RIGHTS RESERVED</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- //footer -->
+</body>
+
+</html>

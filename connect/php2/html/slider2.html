@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    <style>
+        .slider__inner {
+            width: 1200px;
+            height: 500px;
+            margin: 0 auto;
+            margin-top: 160px;
+    
+        }
+        .slider__inner > p {
+            text-align: center;
+            font-size: 20px;
+        }
+        .slider__inner > h2 {
+            padding-top: 80px;
+            padding-bottom: 40px;
+            text-align: center;
+            font-size: 20px;
+        }
+        .slider1 {
+            display: flex;
+            align-items: center;
+            
+            height: 300px;
+            
+        }
+        .slider .slider__img {
+            box-sizing: border-box;
+            width: 100%;
+            height: 300px;
+        }
+        .slider .slick-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .slider .slick-slide img {
+            width: 120px;
+            height: 120px;
+        }
+        .slick-prev:before, .slick-next:before {
+            color: #444444;
+        }
+        .slider__img {
+            position: relative;
+        }
+        /* .slider__img:nth-child(5):before {
+            position: absolute;
+            left: 50%;
+            top: 80%;
+            transform: translate(-50%, -50%);
+            content: '12333';
+        } */
+    
+    
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="slider__inner">
+            <p class="bm50">유통기한이 궁금한 화장품을 선택해보세요!</p>
+            <div class="slider">
+                <div class="slider__img"><img src="assets/img/beauty_icon01.png" alt="아이콘1"></div>
+                <div class="slider__img"><img src="assets/img/beauty_icon02.png" alt="아이콘2"></div>
+                <div class="slider__img"><img src="assets/img/beauty_icon03.png" alt="아이콘3"></div>
+                <div class="slider__img"><img src="assets/img/beauty_icon04.png" alt="아이콘4"></div>
+                <div class="slider__img"><img src="assets/img/beauty_icon05.png" alt="아이콘5"></div>
+                <div class="slider__img"><img src="assets/img/beauty_icon06.png" alt="아이콘6"></div>
+                <div class="slider__img"><img src="assets/img/beauty_icon07.png" alt="아이콘7"></div>
+            </div>
+        </div>
+        <div id="slider__bottom">
+            <img src="assets/img/slider02_01.png" alt="슬라이드밑사진">
+        </div>
+    </div>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $( document ).ready( function() {
+            $( '.slider' ).slick( {
+            autoplay: true,
+            autoplaySpeed: 4000,
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            });
+        });  
+    </script>
+</body>
+</html>

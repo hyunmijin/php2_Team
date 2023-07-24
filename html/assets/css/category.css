@@ -1,0 +1,291 @@
+@import url("https://webfontworld.github.io/zess/BlackHanSans.css");
+@import url("https://webfontworld.github.io/lotte/GhanaChocolate.css");
+@import url("https://webfontworld.github.io/kohi/KOHIBaeum.css");
+
+/* imgText start */
+.category-main {
+        background-color: #fff4fe;
+}
+/* scroll start */
+#scroll::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        background-color: #fafafa;
+}
+
+#scroll::-webkit-scrollbar {
+        width: 8px;
+        background-color: #f5f5f5;
+}
+
+#scroll::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        background-color: #eaafc8;
+}
+
+/* scroll end */
+
+.category__inner {
+        width: 80%;
+        margin: 0 auto;
+}
+
+.category__inner .category {
+        width: 100%;
+        padding-top: 10px;
+}
+.category_logo {
+        display: flex;
+}
+
+.category_logo a {
+        margin-top: 80px;
+        /* display: flex; */
+        justify-content: space-around;
+        /* background-color: #ccc; */
+}
+
+.category_logo a img {
+        margin: 13px;
+        background-color: #fff;
+        border-radius: 30px;
+        width: 80%;
+        cursor: pointer;
+}
+.category_logo a img.active {
+        background-color: #f06171;
+}
+
+#select1 {
+        width: 25%;
+        height: 45px;
+        padding: 11px;
+        font-size: 16px;
+        border: 1px solid #f797a2;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+}
+
+#select1:hover,
+#select1:focus {
+        border-color: #000;
+        outline: none;
+}
+
+.product-registration {
+        margin-top: 80px;
+        width: 100%;
+        display: inline-block;
+}
+
+.product-registration h3 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+}
+
+.product-registration h3 ir {
+        font-size: 16px;
+        font-weight: 100;
+}
+
+.product-choice {
+        width: 100%;
+        /* justify-content: space-between; */
+        display: inline-block;
+        background-color: #fff;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+}
+
+/* datecheck */
+.product-registration .datecheck {
+        margin-top: 40px;
+}
+.product-registration .datecheck img {
+        width: 10%;
+}
+.product-registration .datecheck p {
+        font-size: 18px;
+
+        font-weight: 400;
+        margin-top: 20px;
+        line-height: 1.5;
+}
+.product-registration .datecheck span {
+        padding-bottom: 1.5em;
+        font-weight: bold;
+        font-size: 19px;
+}
+.section1 {
+        display: flex;
+        justify-content: space-between;
+        text-align: start;
+}
+
+.section1-1 {
+        width: 70%;
+        display: flex;
+}
+
+.section1-2 {
+        text-align: start;
+}
+
+.section1-2 button {
+        cursor: pointer;
+}
+
+.section1-1 label,
+.section1-1 .input1,
+.section1-1 button {
+        margin-right: 15px;
+        cursor: pointer;
+}
+
+.section1-1 button a {
+        color: #fff;
+}
+.section1 .select1 {
+        width: 25%;
+}
+
+.input1 {
+        padding: 10px;
+        border: 1px solid #f797a2;
+        border-radius: 5px;
+        width: 200px !important;
+        height: 45px;
+        background-color: #f9f9f9;
+}
+
+/* product */
+.product {
+        margin-top: 80px;
+        margin-bottom: 80px;
+}
+
+.product h3 {
+        font-size: 20px;
+        font-weight: 600;
+}
+
+.product_inner {
+        margin-top: 10px;
+        margin-bottom: 34px;
+}
+
+.product_inner .card {
+        justify-content: space-between;
+        display: flex;
+        width: 100%;
+        margin: 50px 0;
+        font-family: "KOHIBaeum";
+        color: #000;
+}
+.card {
+        height: 60vh;
+}
+.card span {
+        color: #fff;
+        font-size: 0.8em;
+}
+
+.title > span {
+        color: #000;
+}
+.card strong {
+        position: relative;
+        margin-left: 55px;
+}
+.card .desc2 strong:nth-child(1):before {
+        position: absolute;
+        content: "";
+        top: -25px;
+        left: -50px;
+        width: 50px;
+        height: 50px;
+        /* background-color: #fff; */
+        background-image: url(../img/marks.png);
+        background-size: cover;
+}
+.card .desc2 strong:nth-child(3):before {
+        position: absolute;
+        content: "";
+        transform: rotate(180deg);
+        top: -25px;
+        left: -55px;
+        width: 50px;
+        height: 50px;
+        /* background-color: #fff; */
+        background-image: url(../img/marks.png);
+        background-size: cover;
+}
+.card__header {
+        width: 40%;
+        background-repeat: no-repeat;
+}
+
+.card__header img {
+        width: 100%;
+        height: 548px;
+
+        background-color: #000;
+        border-radius: 5px;
+}
+.card__body {
+        width: 55%;
+        height: 548px;
+        background-color: #ec6666;
+        border-radius: 5px;
+        padding: 15px 10px;
+}
+.card__body .title {
+        margin-top: 5%;
+        margin-bottom: 10px;
+        font-size: 2em;
+        text-align: center;
+        font-weight: 300;
+        /* margin-right: 20%; */
+        color: #fff;
+}
+.card__body .desc {
+        font-size: 2em;
+        text-align: center;
+        /* margin-left: 40%; */
+        margin-bottom: 20px;
+        padding: 20px;
+        line-height: 1.8;
+}
+.card__body .desc2 {
+        font-size: 2em;
+        text-align: center;
+}
+.card__body .desc2 span {
+        color: #000;
+        font-size: 1em;
+}
+
+@media screen and (max-width: 768px) {
+        .product_inner > div {
+                flex-wrap: wrap;
+        }
+
+        .product_inner .card {
+                width: 48%;
+                margin-bottom: 20px;
+        }
+
+        /* 
+    .section1 {
+        width: 100%;
+    }
+
+    .input1 {
+        width: 100%;
+    } */
+}

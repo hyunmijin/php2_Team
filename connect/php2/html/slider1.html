@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo.css" rel="stylesheet">
+    
+    <!-- CSS -->
+    <style>
+        .swiper-wrapper {
+        
+        }     
+        .slider__inner2 .slider {
+            align-items: center;  
+            height: 650px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: relative;
+            z-index: 1;
+        }
+        .slider__inner2 .slider.img1{
+            background-image: url(assets/img/slider01_01.png);
+        }
+        .slider__inner2 .slider.img2{
+            background-image: url(assets/img/slider01_02.png);
+        }
+        .slider__inner2 .slider.img3{
+            background-image: url(assets/img/slider01_03.png);
+        }
+
+        .slider__inner2 .slider__info {
+            width: 1920px;
+            margin: 0 auto;
+            padding: 120px;
+        }
+        .slider__inner2 .slider__info .small {
+            display: inline-block;
+            padding: 1px 30px;
+            background-color: #fff;
+            color: #000;
+            font-size: 16px;
+            border-radius: 50px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        .slider__inner2 .slider__info .title{
+            font-size: 80px;
+            color: #fff;
+            margin-bottom: 40px;
+            margin-left: -5px;
+        }
+        .slider__inner2 .slider__info .title1 {
+            font-size: 150px;
+            color: #fff;
+            margin: 80px 0 40px 250px;
+        }
+        .slider__inner2 .slider__info h4{
+            color: #fff;
+        }
+        .slider__inner2 .slider__info .desc{
+            font-size: 18px;
+            line-height: 1.5;
+            color: #fff;
+            width: 80%;
+            word-break: keep-all;
+        }
+        .slider__inner2 .slider__info .desc1 {
+            color: #fff;
+            font-size: 18px;
+            margin-left: 700px;
+        }
+        .slider__inner2 .slider__info .btn{
+            margin-top: 80px;
+        }
+        .slider__inner2 .slider__info .btn a {
+            text-decoration: none;
+            width: 180px;
+            background-color: #fff;
+            font-size: 16px;
+            display: inline-block;
+            text-align: center;
+            padding: 12px 0;
+            margin-right: 4px;
+        }
+        .slider__inner2 .slider__info .btn a:last-child{
+            background-color: #000;
+            color: #fff;
+        }
+        .swiper-button-prev,
+        .swiper-button-next  {
+            width: 30px;
+            height: 65px !important;
+            background-image: url(assets/img/slider01_icon.svg);
+            background-size: 500px;
+        }
+        .swiper-button-next {
+            background-position: -55px 0;
+        }
+        .swiper-button-prev:after,
+        .swiper-button-next:after {
+            font-size: 0 !important;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    
+</head>
+<body>     
+    <header id="headerType"></header>
+    <main id="mainType">
+        <div class="slider__inner2">            
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slider img1">
+                            <div class="slider__info">
+                                <span class="small">EVENT</span>
+                                <h3 class="title">Abide By Beauty</h3>
+                                <h4>Protect Your Skin</h4>
+                                <p class="desc"> 다시쓰기 찝찝한 쓰다만 화장품, <br>
+                                    정확한 유통기한을 확인하고 사용기간을 지켜 트러블이 나지 않도록 하세요.</p>
+                                <div class="btn">
+                                    <a href="#">자세히보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider img2">
+                            <div class="slider__info">
+                                <span class="small">EVENT</span>
+                                <h3 class="title">Abide By Beauty</h3>
+                                <p class="desc">피부타입을 확인해 보세요!</p>
+                                <div class="btn">
+                                    <a href="#">테스트하러 가기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider img3">
+                            <div class="slider__info">
+                                <h3 class="title1">Abide By Beauty</h3>
+                                <p class="desc1">당신의 아름다움을 지키는 ABB</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>                 
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>                
+            </div>                               
+        </div>
+        <!-- sliderType -->
+    </main>
+    <!-- mainType -->
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            direction: 'horizontal',
+            loop: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false
+            },
+
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true
+            },
+        
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },        
+        });
+        const btnStop = document.querySelector(".swiper-button-stop");
+        const btnStart = document.querySelector(".swiper-button-play");
+
+        btnStart.style.display = "none";
+
+        btnStop.addEventListener("click", ()=>{
+            swiper.autoplay.stop();
+            btnStart.style.display = "block";
+            btnStop.style.display = "none";
+        });
+        btnStart.addEventListener("click", ()=>{
+            swiper.autoplay.start();
+            btnStart.style.display = "none";
+            btnStop.style.display = "block";
+        });
+    </script>
+</body>
+</html>
+
+
+

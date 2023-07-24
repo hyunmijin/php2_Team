@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원정보수정</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- SCRIPT -->
+    <script defer src="assets/js/common.js"></script>
+    <style>
+        th{
+            background-color: #F06171;
+            color: #ffff;
+            font-size: 16px;
+            font-weight: normal;
+            border: 1px solid #000;
+            padding: 10px 0;
+        }
+        tr {
+            border: 1px solid;
+        }
+        td {
+            border: 1px solid;
+            text-align: center;
+            padding: 5px 0;
+            font-size: 13px;
+        }
+        .info__subtitle{
+            display: flex;
+            position: relative;
+        }
+        .info__subtitle h3{
+            border-top: 1px solid #9d9d9d;
+            border-left: 1px solid #9d9d9d;
+            border-right: 1px solid #9d9d9d;
+            padding: 12px 0;
+            width: 50%;
+            text-align: center;
+            position: relative;
+            margin: 40px 0;
+        }
+        .info__subtitle h3 em {
+            color: red;
+        }
+        .info__subtitle::after{
+            position: absolute;
+            content: '';
+            width: 50%;
+            right: 0px;
+            top: 88px;
+            border-bottom: 1px solid #9d9d9d;
+        }
+        .mywrite__table .removeBtn, 
+        .mywrite__table .modifyBtn {
+            display: inline-block;
+            border-radius: 5px;
+            background-color: #F8AAB3;
+            padding: 2px 8px;
+        }
+        .saveBtn {
+            display: block;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+         /* scroll start */
+         #scroll::-webkit-scrollbar-track
+        {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            border-radius: 5px;
+            background-color: #FAFAFA;
+        }
+        #scroll::-webkit-scrollbar
+        {
+            width: 8px;
+            background-color: #F5F5F5;
+        }
+        #scroll::-webkit-scrollbar-thumb
+        {
+            border-radius: 5px;
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+            background-color: #EAAFC8;
+        }
+        
+        /* scroll end */
+    </style>
+    
+</head>
+<body id="scroll">
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#main">컨텐츠 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+    
+    <main id="main" class=" mt80">
+        <header id="header">
+            <div class="header__inner">
+                <div class="kategorie">
+                    <div class="kategorie__menu">
+                        <img src="assets/img/kategorie.png" alt="">
+                    </div>
+                    <ul>
+                        <li><a href="#">기초</a></li>
+                        <li><a href="#">마스크팩</a></li>
+                        <li><a href="#">선케어</a></li>
+                        <li><a href="#">클렌징</a></li>
+                        <li><a href="#">메이크업</a></li>
+                        <li><a href="#">헤어</a></li>
+                        <li><a href="#">바디</a></li>
+                        <li><a href="#">커뮤니티</a></li>
+                    </ul>
+                </div>
+                <div class="logo">
+                    <h1>
+                        <a href="#"></a>
+                    </h1>
+                </div>
+                <div class="user">
+                    <a href="#">
+                        <img src="assets/img/user.png" alt="">
+                    </a>
+                    <ul>
+                        <li><a href="#">마이페이지</a></li>
+                        <li><a href="#">로그아웃</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="info__logo">
+            <h1>Abide By Beauty</h1>
+        </div>
+        <!-- //header -->
+        <div class="info__wrap">
+            <div class="info__title mt30 info__bmStyle">
+                <h1>ooo님></h1>
+            </div>
+            <div class="info__sec mt100">
+                <div class="info__list">
+                    <div class="aside1 aside__bmStyle">
+                        <span>나의정보</span>
+                        <ul>
+                            <li><a href="#">프로필 설정</a></li>
+                            <li><a href="#">회원정보 수정</a></li>
+                        </ul>
+                    </div>
+                    <div class="aside2 aside__bmStyle">
+                        <span>나의정보</span>
+                        <ul>
+                            <li><a href="#">내가 쓴 게시물</a></li>
+                            <li><a href="#" class="active">내가 쓴 댓글</a></li>
+                            <li><a href="#">내 제품 기록</a></li>
+                        </ul>
+                    </div>
+                    <div class="aside3 ">
+                        <span>알림</span>
+                        <ul>
+                            <li><a href="#">알림설정</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="info__view">
+                    <div class="info__view__title">
+                        <h2>회원정보 수정</h2>
+                    </div>
+                    <div class="info__form" >
+                        <div class="info__subtitle">
+                            <h3>나의 댓글(<em>0</em>)</h3>
+                            <!-- <span class="empty"></span> -->
+                        </div>
+                        <div class="mywrite__table">
+                            <table>
+                                <colgroup>
+                                    <col style="width :5%">
+                                    <col style="width :43.4%">
+                                    <col style="width :24.3%">
+                                    <col style="width :24.3%">
+                                </colgroup>                               
+                                <thead>
+                                    <tr>
+                                        <th>번호</th>
+                                        <th>제목</th>
+                                        <th>게시날짜</th>
+                                        <th>수정/삭제</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>10</td>
+                                        <td><a href="#">글 잘 보고갑니다~!</a></td>
+                                        <td>2023-05-11</td>
+                                        <td>
+                                            <a href="#" class="modifyBtn">수정</a> / 
+                                            <a href="#" class="removeBtn">삭제</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td><a href="#">저도 유통기한 지나서 버리는제품 많아요</a></td>
+                                        <td>2023-05-11</td>
+                                        <td>
+                                            <a href="#" class="modifyBtn">수정</a> / 
+                                            <a href="#" class="removeBtn">삭제</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td><a href="#">기초제품은 ABB제품이 최고에요!</a></td>
+                                        <td>2023-05-11</td>
+                                        <td>
+                                            <a href="#" class="modifyBtn">수정</a> / 
+                                            <a href="#" class="removeBtn">삭제</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td><a href="#">제품정보좀 알수 있을까요?</a></td>
+                                        <td>2023-05-11</td>
+                                        <td>
+                                            <a href="#" class="modifyBtn">수정</a> / 
+                                            <a href="#" class="removeBtn">삭제</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td><a href="#">역시 맛없는 음식이 몸에 좋은법이네요</a></td>
+                                        <td>2023-05-11</td>
+                                        <td>
+                                            <a href="#" class="modifyBtn">수정</a> / 
+                                            <a href="#" class="removeBtn">삭제</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td><a href="#">저도 그 가게 가봤는데 좋았어요</a></td>
+                                        <td>2023-05-11</td>
+                                        <td>
+                                            <a href="#" class="modifyBtn">수정</a> / 
+                                            <a href="#" class="removeBtn">삭제</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td><a href="#">저도 써보고 싶네요!</a></td>
+                                        <td>2023-05-11</td>
+                                        <td>
+                                            <a href="#" class="modifyBtn">수정</a> / 
+                                            <a href="#" class="removeBtn">삭제</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td><a href="#">저도 이런적 있는데 문의하니까 교환해줬어요!</a></td>
+                                        <td>2023-05-11</td>
+                                        <td>
+                                            <a href="#" class="modifyBtn">수정</a> / 
+                                            <a href="#" class="removeBtn">삭제</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td><a href="#">저는 피부가 민감해서 그제품 쓰면 트러블 생기더라구요ㅜㅜ</a></td>
+                                        <td>2023-05-11</td>
+                                        <td>
+                                            <a href="#" class="modifyBtn">수정</a> / 
+                                            <a href="#" class="removeBtn">삭제</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td><a href="#">좋은 정보 감사합니다!</a></td>
+                                        <td>2023-05-11</td>
+                                        <td>
+                                            <a href="#" class="modifyBtn">수정</a> / 
+                                            <a href="#" class="removeBtn">삭제</a>
+                                        </td>
+                                    </tr>
+            
+                                </tbody>
+                            </table>
+                        </div> 
+                        <div class="notice__pages mb50">
+                            <ul>                        
+                                <li><a href="#">&lt;</a></li>
+                                <li class="active"> <a  href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">></a></li>
+                            
+                            </ul>
+                        </div>      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- main -->
+    
+</body>
+</html>

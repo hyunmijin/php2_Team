@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 페이지</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- SCRIPT -->
+    <script defer src="assets/js/common.js"></script>
+
+</head>
+<body >
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#main">컨텐츠 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <!-- //skip -->
+    
+    <main id="main" class="container mt70">
+        <header id="header">
+            <div class="header__inner">
+                <div class="kategorie">
+                    <div class="kategorie__menu">
+                        <img src="assets/img/kategorie.png" alt="">
+                    </div>
+                    <ul>
+                        <li><a href="#">기초</a></li>
+                        <li><a href="#">마스크팩</a></li>
+                        <li><a href="#">선케어</a></li>
+                        <li><a href="#">클렌징</a></li>
+                        <li><a href="#">메이크업</a></li>
+                        <li><a href="#">헤어</a></li>
+                        <li><a href="#">바디</a></li>
+                        <li><a href="#">커뮤니티</a></li>
+                    </ul>
+                </div>
+                <div class="logo">
+                    <h1>
+                        <a href="#"></a>
+                    </h1>
+                </div>
+                <div class="user">
+                    <a href="#">
+                        <img src="assets/img/user.png" alt="">
+                    </a>
+                    <ul>
+                        <li><a href="#">마이페이지</a></li>
+                        <li><a href="#">로그아웃</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        
+        <!-- //header -->
+        <div class="join__inner ">
+            <h2>회원가입</h2>
+            <p>회원가입을 위해 아이디와 비밀번호를 등록해주세요.</p>
+            
+            <div class="join__form">
+                <form action="#" name="#" method="post">
+                    <fieldset>
+                        <legend class="blind">회원가입 영역</legend>
+                        <div>
+                            <label for="memberID"></label>
+                            <input type="text" id="memberID" name="memberID" class="inputStyle" placeholder="아이디" required>
+                        </div>
+                        <div>
+                            <label for="youPass"></label>
+                            <input type="password" id="youPass" name="youPass" class="inputStyle" placeholder="비밀번호" required>
+                        </div>
+                        <div>
+                            <label for="youPassC"></label>
+                            <input type="password" id="youPassC" name="youPassC" class="inputStyle" placeholder="비밀번호 확인" required>
+                        </div>
+                        <div>
+                            <label for="youName"></label>
+                            <input type="text" id="youName" name="youName" class="inputStyle" placeholder="이름" required>
+                        </div>
+                        <div>
+                            <label for="youPhone"></label>
+                            <input type="text" id="youPhone" name="youPhone" class="inputStyle" placeholder="휴대폰번호" required>
+                            <span id="chkPhone"></span>
+                        </div>
+                        <div>
+                            <label for="nickName"></label>
+                            <input type="text" id="nickName" name="nickName" class="inputStyle" placeholder="닉네임" required>
+                            <span id="chkNickName"></span>
+                        </div>
+                        <div>
+                            <label for="youBirth"></label>
+                            <input type="text" id="youBirth" name="youBirth" class="inputStyle" placeholder="생년월일" required>
+                        </div>
+                        <div> 
+                            <label for="youGender"></label>
+                            <select type="text" id="youGender" name="youGender" class="inputStyle" placeholder="성별" required>
+                                <option value="">성별 선택</option>
+                                <option value="남">남</option>
+                                <option value="여">여</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="btnStyle3">회원가입 완료</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div> 
+    </main>
+    <!-- main -->
+</body>
+</html>

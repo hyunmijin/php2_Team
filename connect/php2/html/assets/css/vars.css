@@ -1,0 +1,23 @@
+:root {
+    --main__font : "GmarketSans";
+    --main__win : "NanumSquareNeo";
+
+    --font__size: "16px;";
+
+    --color__black: #000;
+    --color__white: #fff;
+    
+    --bg__gray: #eee;
+    --bg__gray2: #e0e0e0;
+    --bg__gray3: #d4d4d4;
+    --bg__gray4: #9d9d9d;
+    --bg__gray5: #767676;
+
+    --bg__black: #000;
+    --bg__pink : #F8AAB3;
+    --bg__pink3 : #F06171;
+}
+
+@media (max-width: 800px) {
+    
+}

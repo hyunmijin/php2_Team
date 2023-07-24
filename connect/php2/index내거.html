@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP Class</title>
+
+    <link rel="stylesheet" href="html/assets/css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #F8F4FF;
+            margin: 0 auto;
+            font-family: 'GmarketSans';
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 2;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        .wrap {
+            padding-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            max-width: 1160px;
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+
+
+        .wrap>div ul {
+            /* width: 50%; */
+            border-left: 5px solid #F06171;
+            border-radius: 2px;
+            padding-left: 20px;
+        }
+
+        .wrap>div ul li:hover {
+            background-color: #f0617218;
+            border-radius: 50px;
+        }
+
+        .wrap>div {
+            width: 30%;
+            padding: 20px 100px 100;
+            /* background-color: #ccc; */
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #F06171;
+            text-underline-position: under;
+        }
+
+        .wrap h2 {
+            color: #fff;
+            font-size: 20px;
+            border-radius: 100px;
+            margin-bottom: 20px;
+            background-color: #F06171;
+            text-align: center;
+            /* width: 150px; */
+            padding: 10px;
+        }
+
+        h4 {
+            margin-top: -20px;
+            margin-right: 80px;
+            width: 140px;
+            height: 90px;
+            background-image: url(html/assets/img/beaute_logo1.svg);
+            background-size: cover;
+            position: fixed;
+            left: 20px;
+        }
+
+        h3 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+        h5 {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <h4></h4>
+        <div>
+            <h2>Figma</h2>
+            <ul>
+                <h3>
+                    <a
+                        href="https://www.figma.com/file/r26rbCZCzClyiDmqlCrYkb/ABB?type=design&node-id=2%3A2&t=l8ypfhXVQv9BgNEP-1">메인</a>
+                </h3>
+                <h3>
+                    <a
+                        href="https://www.figma.com/file/r26rbCZCzClyiDmqlCrYkb/ABB?type=design&node-id=115%3A414&t=tlgzFblguURSp8R2-1">화장품 카테고리</a>
+                </h3>
+                <h3>
+                    <a
+                        href="https://www.figma.com/file/r26rbCZCzClyiDmqlCrYkb/ABB?type=design&node-id=0%3A1&t=l8ypfhXVQv9BgNEP-1">로그인/회원가입</a>
+                </h3>
+                <h3>
+                    <a
+                        href="https://www.figma.com/file/r26rbCZCzClyiDmqlCrYkb/ABB?type=design&node-id=62%3A35&t=gn38uIrPfDKGhPlA-1">커뮤니티</a>
+                </h3>
+                <h3>
+                    <a
+                        href="https://www.figma.com/file/r26rbCZCzClyiDmqlCrYkb/ABB?type=design&node-id=115%3A2561&t=gn38uIrPfDKGhPlA-1">마이페이지</a>
+                </h3>
+            </ul>
+        </div>
+        <div>
+            <h2>HTML</h2>
+            <ul>
+                <h3><a href="html/main.html">메인(main.html)</a></h3>
+                <h3>로그인/회원가입</h3>
+                <li><a href="html/join.html">회원가입(join.html)</a></li>
+                <li><a href="html/joinEnd.html">회원가입완료(joinEnd.html)</a></li>
+                <li><a href="html/login.html">로그인(login.html)</a></li>
+                <li><a href="html/loginfind.html">아이디 찾기(loginfind.html)</a></li>
+                <li><a href="html/loginfindEnd.html">아이디 찾기 완료(loginfindEnd.html)</a></li>
+                <li><a href="html/passwordfind.html">비밀번호 찾기(passwordfind.html)</a></li>
+                <li><a href="html/passwordfindNum.html">비밀번호 찾기_인증번호(passwordfindNum.html)</a></li>
+                <li><a href="html/passwordfindEnd.html">비밀번호 찾기 완료(passwordfindEnd.html)</a></li>
+                <li><a href="html/tos.html">약관동의(tos.html)</a></li>
+                <li><a href="html/withdraw.html">회원탈퇴</a></li>
+                <li><a href="html/withdrawcheck.html">회원탈퇴 완료</a></li>
+                <br>
+                <h3>화장품 카테고리</h3>
+                <li><a href="html/categoryView1.html">메인</a></li>
+                <li><a href="html/categoryViewcheck.html">메인 유통기한 확인</a></li>
+                <li><a href="html/writeList.html">내 제품 기록 확인</a></li>
+                <br>
+                <h3>커뮤니티</h3>
+                <br>
+                <h5><a href="html/trendsBoard.html">뷰티트렌드(trendsBoard.html)</a></h5>
+                <br>
+                <h5><a href="html/shareBoard.html">공유 게시판(shareBoard.html)</a></h5>
+                <li><a href="html/ShareboardView.html">공유 게시판 글보기(ShareboardView.html)</a></li>
+                <li><a href="html/boardwrite.html">공유 게시판 글작성(boardwrite.html)</a></li>
+                <li><a href="html/boardModify.html">공유 게시판 글편집(boardModify.html)</a></li>
+                <br>
+                <h5><a href="html/FAQ.html">FAQ(html/FAQ.html)</a></h5>
+                <br>
+                <h5><a href="html/boardNotice.html">공지사항(html/boardNotice.html)</a></h5>
+                <li><a href="html/boardView.html">공지사항 글 보기(html/boardView.html)</a></li>
+                <li><a href="html/boardNotice.html">공지사항 글 검색하기(html/boardNotice.html)</a></li>
+                <li><a href="html/boardNotice.html">공지사항 글 검색 결과보기(html/boardNotice.html)</a></li>
+                <li><a href="html/boardwrite.html">공지사항 글 작성(html/boardwrite.html)</a></li>
+                <li><a href="html/boardModify.html">공지사항 글 편집(html/boardModify.html)</a></li>
+                <br>
+                <h3>마이페이지</h3>
+                <li><a href="html/myInfoProfile.html">마이페이지(프로필설정)</a></li>
+                <li><a href="html/myInfoModifyPass.html">회원 정보 수정(비밀번호확인)</a></li>
+                <li><a href="html/myInfoModifyinfo.html">회원 정보 수정</a></li>
+                <li><a href="html/myinfoMywrite.html">내가 쓴 게시물 확인,수정,삭제</a></li>
+                <li><a href="html/myinfoMycomment.html">내가 쓴 댓글 확인, 수정, 삭제</a></li>
+                <li><a href="html/writeList.html">내 제품 기록 확인</a></li>
+                <!-- <li><a href="#">알림 설정</a></li> -->
+                <br>
+
+            </ul>
+        </div>
+        <div>
+            <h2>PHP</h2>
+            <ul>
+            </ul>
+            <ul>
+                <h3>로그인/회원가입</h3>
+                <li><a href="main/main.php">메인(main.php)</a></li>
+                <li><a href="join/join.php">회원가입(join.php)</a></li>
+                <li><a href="join/joinEnd.php">회원가입완료(joinEnd.php)</a></li>
+                <li><a href="login/login.php">로그인(login.php)</a></li>
+                <br>
+                <h3>마이페이지</h3>
+                <li><a href="myinfo/myInfoModifyinfo.php">회원정보수정(myInfoModifyinfo.php)</a></li>
+                <li><a href="myinfo/myinfoMywrite.php">내가 쓴 게시물(myinfoMywrite.php)</a></li>
+                <h3>커뮤니티</h3>
+                <li><a href="notice/boardNotice.php">공지사항(boardNotice.pnp)</a></li>
+                <li><a href="shareBoard/shareBoard.php">공유 게시판(shareBoard.pnp)</a></li>
+                <li><a href="shareBoard/shareBoardView.php">공유 게시판(shareBoardView.pnp)</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

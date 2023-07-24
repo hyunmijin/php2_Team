@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+#header {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #fff;
+}
+.kategorie {
+    width: 7.7%;
+    min-width: 80px;
+    height: 80px;
+    position: relative;
+    padding: 0 20px 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #d4d4d4;
+}
+.kategorie:hover {
+    background-color: #e4e4e4;
+}
+.kategorie__menu{
+    /* position: absolute; */
+    /* margin-right: 35px; */
+    width: 30px;
+    height: 30px;
+    /* bottom: 25px;
+    left: 5%; */
+    cursor: pointer;
+}
+.kategorie__menu img {
+    width: 100%;
+    height: 30px;
+    min-width: 30px;
+}
+
+.kategorie > ul {
+    position: absolute;
+    display: none;
+    justify-content: right;
+    width: 100%;
+    top: 79.5px;
+    left: 0%;
+    border: 1px solid #d4d4d4;
+    z-index: 100;
+    display: none;
+
+    /* padding: 30px 40px; */
+}
+.kategorie > ul > li {
+    /* padding: 5px 0 5px 0; */
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    z-index: 100;
+}
+.kategorie > ul > li:hover {
+    background-color: #ddd;
+}
+.kategorie > ul > li > a {
+    padding: 10px;
+    display: block;
+}
+
+.logo {
+    width: 90%;
+    /* height: 80px; */
+}
+
+.logo h1 a {
+    font-family: 'Oswald';
+    font-weight: bold;
+    font-size: 30px !important;
+    width: 12vh;
+    height: 8vh;
+    background-image: url(../img/beaute_logo1.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.user {
+    width: 7.7%;
+    min-width: 90px;
+    height: 80px;
+    position: relative;
+    padding: 0 20px 0 20px;
+    /* background-color: #999; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #d4d4d4;
+}
+.user:hover {
+    background-color: #e4e4e4;
+}
+.user > ul {
+    position: absolute;
+    display: none;
+    justify-content: right;
+    width: 100%;
+    top: 79.5px;
+    left: 0%;
+    border: 1px solid #d4d4d4;
+    z-index: 100;
+    /* padding: 30px 40px; */
+}
+.user > ul > li {
+    /* padding: 5px 0 5px 0; */
+    width: 100;
+    text-align: center;
+    background-color: #fff;
+
+}
+.user > ul > li:hover {
+    background-color: #ddd;
+}
+.user > ul > li > a {
+    padding: 10px;
+    display: block;
+}
+.user img {
+    
+}
+.user > a {
+    /* background-image: url(/php2/html/assets/img/user.png); */
+    /* position: absolute; */
+    background-size: cover;
+    width: 30px;
+    height: 35px;
+    bottom: 25px;
+    right: 5%;
+}

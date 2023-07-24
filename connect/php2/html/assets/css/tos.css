@@ -1,0 +1,101 @@
+.tos__inner h2 {
+    padding: 40px 0 20px 0px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+} 
+.tos__inner > p {
+    padding-bottom: 40px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.tos__form {
+    /* padding: 10% 20%; */
+    display: inline-block;
+    width: 100%;
+    
+}
+.tos__form input {
+    margin-bottom: 10px;
+}
+.tos__form input:nth-child(2) {
+    margin-bottom: 50px;
+}
+.tos {
+    height: 80px;
+    overflow-y: scroll;
+    padding: 10px;
+    border: 1px solid #7e7e7e;
+    border-radius: 5px;
+    margin: 0px 0px 30px 0;
+}
+.tos p{
+    text-align: left;
+    line-height: 1.5;
+}
+
+fieldset button {
+    margin-top: 30px;
+}
+
+/* joinagree */
+/* .join__agree {
+    padding: 10% 0 5%;
+}
+.joinagree__box {
+    border: 1px solid #d9d9d9;
+    height: 150px;
+    background-color: #fffffff3;
+    padding: 20px;
+    overflow-y: scroll;
+    border-radius: 5px;
+}
+.join__agree .check {
+    padding: 7px 0;
+}
+.join__agree .check label {
+    display: inline-block;
+    font-size: 18px;
+}
+.join__agree .check input {
+    width: 17px;
+    height: 17px;
+    vertical-align: -3px;
+}  */
+
+.join__agree {
+    margin: 0 auto;
+    padding: 2% 0;  
+}
+.joinagree__box {
+    margin: 0 auto;
+    border: 1px solid #d9d9d9;
+    width: 100%;
+    height: 300px;
+    background-color: #fffffff3;
+    padding: 20px;
+    overflow-y: scroll;
+    border-radius: 5px;
+}
+.join__agree .check {
+    display: flex;
+    /* justify-content: center; */
+    padding: 7px 0;
+}
+.join__agree .check label {
+    display: inline-block;
+    font-size: 18px;
+}
+.join__agree .check input {
+    width: 17px;
+    height: 17px;
+    vertical-align: -3px;
+}
+.join__agree .agreeMsg{
+    color: red;
+}
+.join__agree .agreeBtn {
+    margin: 75px 0;
+}

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원정보수정</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- SCRIPT -->
+    <script defer src="assets/js/common.js"></script>
+
+    
+</head>
+<body>
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#main">컨텐츠 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+    
+    <main id="main" class=" mt80">
+        <header id="header">
+            <div class="header__inner">
+                <div class="kategorie">
+                    <div class="kategorie__menu">
+                        <img src="assets/img/kategorie.png" alt="">
+                    </div>
+                    <ul>
+                        <li><a href="#">기초</a></li>
+                        <li><a href="#">마스크팩</a></li>
+                        <li><a href="#">선케어</a></li>
+                        <li><a href="#">클렌징</a></li>
+                        <li><a href="#">메이크업</a></li>
+                        <li><a href="#">헤어</a></li>
+                        <li><a href="#">바디</a></li>
+                        <li><a href="#">커뮤니티</a></li>
+                    </ul>
+                </div>
+                <div class="logo">
+                    <h1>
+                        <a href="#"></a>
+                    </h1>
+                </div>
+                <div class="user">
+                    <a href="#">
+                        <img src="assets/img/user.png" alt="">
+                    </a>
+                    <ul>
+                        <li><a href="#">마이페이지</a></li>
+                        <li><a href="#">로그아웃</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="info__logo">
+            <h1>Abide By Beauty</h1>
+        </div>
+        <!-- //header -->
+        <div class="info__wrap">
+            <div class="info__title mt30 info__bmStyle">
+                <h1>ooo님></h1>
+            </div>
+            <div class="info__sec mt100">
+                <div class="info__list">
+                    <div class="aside1 aside__bmStyle">
+                        <span>나의정보</span>
+                        <ul>
+                            <li><a href="#">프로필 설정</a></li>
+                            <li><a href="#" class="active">회원정보 수정</a></li>
+                        </ul>
+                    </div>
+                    <div class="aside2 aside__bmStyle">
+                        <span>나의정보</span>
+                        <ul>
+                            <li><a href="#" >내가 쓴 게시물</a></li>
+                            <li><a href="#" >내가 쓴 댓글</a></li>
+                            <li><a href="#" >내 제품 기록</a></li>
+                        </ul>
+                    </div>
+                    <div class="aside3 ">
+                        <span>알림</span>
+                        <ul>
+                            <li><a href="#">알림설정</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="info__view scroll"  id="scrollInfo">
+                    <div class="info__view__title">
+                        <h2>회원정보 수정</h2>
+                    </div>
+                    <div class="info__form" >
+                        <div>
+                            <p class="info__title">비밀번호 수정</p>
+                        </div>
+                        <div class="info__bmStyle2">
+                            <form action="#" name="#" method="post"></form>
+                                <fieldset>
+                                    <legend class="blind">회원정보 수정 비밀번호입력창</legend>        
+                                    <div class="inputStyleInfo">
+                                        <label for="youPass"></label>
+                                        <input type="password" id="youPass" name="youPass" class="inputStyle" placeholder="기존 비밀번호를 입력해 주세요" required>
+                                    </div>
+                                    <div class="inputStyleInfo">
+                                        <label for="newYouPass"></label>
+                                        <input type="password" id="newYouPass" name="newYouPass" class="inputStyle" placeholder="신규 비밀번호를 입력해 주세요" required>
+                                    </div>
+                                    <div class="inputStyleInfo">
+                                        <label for="newYouPassC"></label>
+                                        <input type="password" id="newYouPassC" name="newYouPassC" class="inputStyle" placeholder="신규 비밀번호를 한번더 입력해 주세요" required>
+                                    </div>
+                                </fieldset>
+                            </form>
+                            <p class="info__desc">· 신규 비밀번호는 대소문자, 숫자, 특수문자를 포함해 주세요</p>
+                            <button type="button" class=" btnStyle3 ">비밀번호 수정</button>
+                        </div>
+                    </div>
+                    <div class="info__form userinfo__form" >
+                        <div>
+                            <p class="info__title">개인정보 수정</p>
+                        </div>
+                        <div class="info__bmStyle2">
+                            <form action="#" name="#" method="post"></form>
+                                <fieldset>
+                                    <legend class="blind">회원정보 수정 비밀번호입력창</legend>        
+                                    <div class="inputStyleInfo">
+                                        <label for="youName"></label>
+                                        <input type="text" id="youName" name="youName" class="inputStyle" placeholder="이름" readonly >
+                                    </div>
+                                    <div class="user__birth__inner">
+                                        <div class="inputStyleInfo user__birth">
+                                            <label for="youYear"></label>
+                                            <select type="text" id="youYear" name="youYear" class="inputStyle" required>
+                                            </select>
+                                        </div>
+                                        <div class="inputStyleInfo user__birth">
+                                            <label for="youMonth"></label>
+                                            <select type="text" id="youMonth" name="youMonth" class="inputStyle" required>
+                                            </select>
+                                        </div>
+                                        <div class="inputStyleInfo user__birth">
+                                            <label for="youDay"></label>
+                                            <select type="text" id="youDay" name="youDay" class="inputStyle" required>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="inputStyleInfoRadio">
+                                        <label for="male" class="rad-label">
+                                            <input type="radio" class="rad-input" name="gender" id="male"  value="male">
+                                            <div class="rad-design"></div>
+                                            <div class="rad-text">남성</div>
+                                        </label>
+                                        <label for="female" class="rad-label">
+                                            <input type="radio" class="rad-input" name="gender" id="female"  value="female">
+                                            <div class="rad-design"></div>
+                                            <div class="rad-text">여성</div>
+                                        </label>
+                                    </div>
+                                    <div class="user__phone__inner">
+                                        <div  class="inputStyleInfo youAgency"> 
+                                            <label for="youAgency"></label>
+                                            <select type="text" id="youAgency" name="youAgency" class="inputStyle" placeholder="통신사" required>
+                                                <option value="010">010</option>
+                                                <option value="011">011</option>
+                                                <option value="016">016</option>
+                                                <option value="019">019</option>
+                                            </select>
+                                        </div>
+                                        <div  class="inputStyleInfo youPhone"> 
+                                                <label for="youPhone"></label>
+                                                <input type="text" id="youPhone" name="youPhone" class="inputStyle" placeholder="전화번호">
+                                        </div>
+                                        <button type="button" class="phonekBtn infoBtnStyle1 ">변경</button>
+                                    </div>
+                                    <div class="inputStyleInfo">
+                                        <label for="memberID"></label>
+                                        <input type="text" id="memberID" name="memberID" class="inputStyle" placeholder="닉넴" readonly >
+                                    </div>
+                                </fieldset>
+                            </form>
+                            
+                            <button type="button" class=" btnStyle3 ">회원정보 수정</button>
+                        </div>
+                    </div>
+                    <div class="info__form" >
+                        <div>
+                            <p class="info__title">sns 계정연동 관리</p>
+                        </div>
+                        <div class="info__bmStyle2">
+                            <form action="#" name="#" method="post"></form>
+                                <fieldset>
+                                    <legend class="blind">카카오 </legend>        
+                                    <div class="inputStyleToggle">
+                                        <div class="kakaoDiv">
+                                            <p>카카오</p>
+                                            <input type="checkbox" id="toggle" hidden>
+                                            <label for="toggle" class="toggleSwitch" id="kakaoLink">
+                                                <span class="toggleButton" id="kakaoLink"></span>
+                                            </label>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="inputStyleKakao">
+                                         
+                                    </div>
+
+                                </fieldset>
+                            </form>
+                            
+                            <button type="button" class=" btnStyle3 ">카카오연동 수정</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- main -->
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script>
+    //    $(document).ready(function(){            
+    //         let now = new Date();
+    //         let year = now.getFullYear();
+    //         let mon = (now.getMonth() + 1) > 9 ? ''+(now.getMonth() + 1) : '0'+(now.getMonth() + 1); 
+    //         let day = (now.getDate()) > 9 ? ''+(now.getDate()) : '0'+( now.getDate());           
+    //         //년도 selectbox만들기               
+    //         for(let i = 1970 ; i <= year ; i++) {
+    //             $('#youYear').append('<option value="' + i + '">' + i + '년</option>');    
+    //         }
+
+    //         // 월별 selectbox 만들기            
+    //         for(let i=1; i <= 12; i++) {
+    //             let mm = i > 9 ? i : "0"+i ;            
+    //             $('#youMonth').append('<option value="' + mm + '">' + mm + '월</option>');    
+    //         }
+            
+    //         // 일별 selectbox 만들기
+    //         for(let i=1; i <= 31; i++) {
+    //             let dd = i > 9 ? i : "0"+i ;            
+    //             $('#youDay').append('<option value="' + dd + '">' + dd+ '일</option>');    
+    //         }
+    //         $("#youYear  > option[value="+year+"]").attr("selected", "true");        
+    //         $("#youMonth  > option[value="+mon+"]").attr("selected", "true");    
+    //         $("#youDay  > option[value="+day+"]").attr("selected", "true");       
+    //     }) 
+
+
+        $(document).ready(function() {
+        // 연도 select box 만들기
+        var yearSelect = $('#youYear');
+        var currentYear = new Date().getFullYear();
+        for (var i = currentYear; i >= 1950; i--) {
+            yearSelect.append($('<option>', {value: i, text: i + '년'}));
+        }
+
+        // 월 select box 만들기
+        var monthSelect = $('#youMonth');
+        for (var i = 1; i <= 12; i++) {
+            monthSelect.append($('<option>', {value: i, text: i + '월'}));
+        }
+
+        // 일 select box 만들기
+        var daySelect = $('#youDay');
+        daySelect.append($('<option>', {value: 0, text:'달을 선택하세요'}));
+
+        // 월이 선택되었을 때
+        $('#youMonth').on('change', function() {
+            daySelect.empty(); // 기존 옵션 제거
+
+            var year = $('#youYear').val();
+            var month = $('#youMonth').val();
+            var daysInMonth = new Date(year, month, 0).getDate(); // 해당 월의 일 수 계산
+
+            for (var i = 1; i <= daysInMonth; i++) {
+            daySelect.append($('<option>', {value: i, text: i + '일'}));
+            }
+        });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화장품 등록한 목록 보기</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        .list__inner {
+            width: calc(100% - 35vw);
+            margin: 80px auto 0px auto;
+            /* background-color: #fff; */
+        }
+        .icon {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px 0px 80px 0px;
+            margin: 0 auto;
+        }
+        .icon img {
+            border: 1px solid #F797A2;
+            border-radius: 10px;
+            background-color: #fff;
+            width: 100px;
+            height: 100px;
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+        .icon img:hover {
+            transform: scale(1.15);
+            border: 2px solid #F06171;
+        }
+        .active {
+            border: 3px solid #F06171;
+            border-radius: 15px; 
+        }
+        .list {
+            width: 100%;
+            height: 45%;
+            padding-bottom: 100px;
+            margin: 0 auto 0 auto;
+            /* background-color: #fff; */
+            display: flex;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+        }
+        .list__img img{
+            border-radius: 15px;
+            padding: 10px 10px 0px 10px;
+        }
+        .list__each {
+            display: inline-block;
+            width: 13.6vw;
+            min-width: 251px;
+            height: 380px;
+            margin: 0px 1vw 40px 1vw;
+            background-color: rgba(247, 151, 162, 0.07);
+            border: 1px solid #F797A2;
+        }
+       
+        .list:nth-last-child(1) {
+            margin-bottom: 100px;
+        }
+    
+    
+        
+        .list__text {
+            /* margin-top: 20px; */
+            height: 55%;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+        .list__text h5 {
+            padding-top: 10px;
+            width: 100%;
+            height: 30%; 
+            word-break: keep-all;
+        }
+        .list__text span {
+            width: 100%;
+            height: 30%;
+            font-size: 30px;
+            font-weight: 700;
+            color: #F06171;
+        }
+        .list__text p {
+            width: 100%;
+            font-size: 16px;
+            padding: 5px;
+            color: #fff;
+            text-align: left;
+        }
+        .list__bottom {
+            background-color: #F797A2;
+            width: 100%;
+            display: flex;
+            
+        }
+        .date {
+            width: 60%;
+
+        }
+        .list__active {
+            width: 40%;
+            text-align: right;
+            margin-top: 40px;
+            /* background-color: #fff; */
+        }
+        .list__active a {
+            color: #fff;
+            padding: 5px;
+
+        }
+        .list__active a:hover {
+            background-color: #F06171;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <header id="header">
+        <div class="header__inner">
+            <div class="kategorie">
+                <div class="kategorie__menu">
+                    <img src="assets/img/kategorie.png" alt="">
+                </div>
+                <ul>
+                    <li><a href="#">기초</a></li>
+                    <li><a href="#">마스크팩</a></li>
+                    <li><a href="#">선케어</a></li>
+                    <li><a href="#">클렌징</a></li>
+                    <li><a href="#">메이크업</a></li>
+                    <li><a href="#">헤어</a></li>
+                    <li><a href="#">바디</a></li>
+                    <li><a href="#">커뮤니티</a></li>
+                </ul>
+            </div>
+            <div class="logo">
+                <h1>
+                    <a href="#"></a>
+                </h1>
+            </div>
+            <div class="user">
+                <a href="#">
+                    <img src="assets/img/user.png" alt="">
+                </a>
+                <ul>
+                    <li><a href="#">마이페이지</a></li>
+                    <li><a href="#">로그아웃</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <div class="list__inner">
+        <div class="icon filter">
+            <div class="slider__img active" data-filter=".all"><img src="assets/img/beauty_icon08.png" data-filter-value=".all" alt="아이콘1"></div>
+            <div class="slider__img" data-filter=".lipstick"><img src="assets/img/beauty_icon01.png" data-filter-value=".lipstick" alt="아이콘1"></div>
+            <div class="slider__img" data-filter=".shampoo"><img src="assets/img/beauty_icon02.png" data-filter-value=".shampoo" alt="아이콘2"></div>
+            <div class="slider__img" data-filter=".sunscreen"><img src="assets/img/beauty_icon03.png" data-filter-value=".sunscreen" alt="아이콘3"></div>
+            <div class="slider__img" data-filter=".cleansing"><img src="assets/img/beauty_icon04.png" data-filter-value=".cleansing" alt="아이콘4"></div>
+            <div class="slider__img" data-filter=".makeup"><img src="assets/img/beauty_icon05.png" data-filter-value=".makeup" alt="아이콘5"></div>
+            <div class="slider__img" data-filter=".mask"><img src="assets/img/beauty_icon06.png" data-filter-value=".mask" alt="아이콘6"></div>
+            <div class="slider__img" data-filter=".cream"><img src="assets/img/beauty_icon07.png" data-filter-value=".cream" alt="아이콘7"></div>
+        </div>
+        <div class="list">
+            <!-- list__each -->
+            <div class="list__each lipstick all">
+                <div class="list__img">
+                    <img src="assets/img/list__lipstick.png" alt="립스틱">
+                </div>
+                <div class="list__text">
+                    <h5>립스틱</h5>
+                    <span>426일</span>
+                    <div class="list__bottom">
+                        <div class="date">
+                            <p>2023/01/05 ~</p>
+                            <p>2024/03/05</p>
+                        </div>
+                        <div class="list__active">
+                            <a href="#">수정</a>
+                            <a href="#">삭제</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //list__each -->
+            
+            <!-- list__each -->
+            <div class="list__each lipstick all">
+                <div class="list__img">
+                    <img src="assets/img/list__lipstick.png" alt="립스틱">
+                </div>
+                <div class="list__text">
+                    <h5>샤넬 138호 푸규스루쥬 알뤼르 립스틱</h5>
+                    <span>426일</span>
+                    <div class="list__bottom">
+                        <div class="date">
+                            <p>2023/01/05 ~</p>
+                            <p>2024/03/05</p>
+                        </div>
+                        <div class="list__active">
+                            <a href="#">수정</a>
+                            <a href="#">삭제</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //list__each -->
+            
+            <!-- list__each -->
+            <div class="list__each shampoo all">
+                <div class="list__img">
+                    <img src="assets/img/list__shampoo.png" alt="샴푸">
+                </div>
+                <div class="list__text">
+                    <h5>샤넬 138호 푸규스루쥬 알뤼르 립스틱</h5>
+                    <span>426일</span>
+                    <div class="list__bottom">
+                        <div class="date">
+                            <p>2023/01/05 ~</p>
+                            <p>2024/03/05</p>
+                        </div>
+                        <div class="list__active">
+                            <a href="#">수정</a>
+                            <a href="#">삭제</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //list__each -->
+
+            <!-- list__each -->
+            <div class="list__each cleansing all">
+                <div class="list__img">
+                    <img src="assets/img/list__cleansing.png" alt="클렌징">
+                </div>
+                <div class="list__text">
+                    <h5>샤넬 138호 푸규스루쥬 알뤼르 립스틱</h5>
+                    <span>426일</span>
+                    <div class="list__bottom">
+                        <div class="date">
+                            <p>2023/01/05 ~</p>
+                            <p>2024/03/05</p>
+                        </div>
+                        <div class="list__active">
+                            <a href="#">수정</a>
+                            <a href="#">삭제</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //list__each -->
+
+            <!-- list__each -->
+            <div class="list__each mask all">
+                <div class="list__img">
+                    <img src="assets/img/list__mask.png" alt="마스크팩">
+                </div>
+                <div class="list__text">
+                    <h5>샤넬 138호 푸규스루쥬 알뤼르 립스틱</h5>
+                    <span>426일</span>
+                    <div class="list__bottom">
+                        <div class="date">
+                            <p>2023/01/05 ~</p>
+                            <p>2024/03/05</p>
+                        </div>
+                        <div class="list__active">
+                            <a href="#">수정</a>
+                            <a href="#">삭제</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //list__each -->
+
+            <!-- list__each -->
+            <div class="list__each makeup all">
+                <div class="list__img">
+                    <img src="assets/img/list__makeup.png" alt="메이크업">
+                </div>
+                <div class="list__text">
+                    <h5>샤넬 138호 푸규스루쥬 알뤼르 립스틱</h5>
+                    <span>426일</span>
+                    <div class="list__bottom">
+                        <div class="date">
+                            <p>2023/01/05 ~</p>
+                            <p>2024/03/05</p>
+                        </div>
+                        <div class="list__active">
+                            <a href="#">수정</a>
+                            <a href="#">삭제</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //list__each -->
+
+            <!-- list__each -->
+            <div class="list__each sunscreen all">
+                <div class="list__img">
+                    <img src="assets/img/list__sunscreen.png" alt="썬크림">
+                </div>
+                <div class="list__text">
+                    <h5>샤넬 138호 푸규스루쥬 알뤼르 립스틱</h5>
+                    <span>426일</span>
+                    <div class="list__bottom">
+                        <div class="date">
+                            <p>2023/01/05 ~</p>
+                            <p>2024/03/05</p>
+                        </div>
+                        <div class="list__active">
+                            <a href="#">수정</a>
+                            <a href="#">삭제</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //list__each -->
+
+            <!-- list__each -->
+            <div class="list__each cream all">
+                <div class="list__img">
+                    <img src="assets/img/list__cream.png" alt="크림">
+                </div>
+                <div class="list__text">
+                    <h5>샤넬 138호 푸규스루쥬 알뤼르 립스틱</h5>
+                    <span>426일</span>
+                    <div class="list__bottom">
+                        <div class="date">
+                            <p>2023/01/05 ~</p>
+                            <p>2024/03/05</p>
+                        </div>
+                        <div class="list__active">
+                            <a href="#">수정</a>
+                            <a href="#">삭제</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //list__each -->
+
+            <!-- list__each -->
+            <div class="list__each lipstick all">
+                <div class="list__img">
+                    <img src="assets/img/list__lipstick.png" alt="립스틱">
+                </div>
+                <div class="list__text">
+                    <h5>샤넬 138호 푸규스루쥬 알뤼르 립스틱</h5>
+                    <span>426일</span>
+                    <div class="list__bottom">
+                        <div class="date">
+                            <p>2023/01/05 ~</p>
+                            <p>2024/03/05</p>
+                        </div>
+                        <div class="list__active">
+                            <a href="#">수정</a>
+                            <a href="#">삭제</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //list__each -->
+            
+            <!-- list__each -->
+            <div class="list__each shampoo all">
+                <div class="list__img">
+                    <img src="assets/img/list__shampoo.png" alt="샴푸">
+                </div>
+                <div class="list__text">
+                    <h5>샤넬 138호 푸규스루쥬 알뤼르 립스틱</h5>
+                    <span>426일</span>
+                    <div class="list__bottom">
+                        <div class="date">
+                            <p>2023/01/05 ~</p>
+                            <p>2024/03/05</p>
+                        </div>
+                        <div class="list__active">
+                            <a href="#">수정</a>
+                            <a href="#">삭제</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //list__each -->
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="footer__inner">
+            <div class="logo2">
+                <h1>ABB
+                    <p>COMMUNITY</p>
+                </h1>
+
+            </div>
+            <div class="fot">
+                <div class="nav">
+                    <ul>
+                        <li>뉴스보기</li>
+                        <li>공유게시판</li>
+                        <li>정보보기</li>
+                        <li>FAQ</li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <p>COPYRIGHT©ABB</p>
+                    <p>ALL RIGHTS RESERVED</p>
+                </div>
+            </div>
+        </div> 
+    </footer>
+    <!-- //footer -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+    // 아이콘 클릭 시 해당하는 클래스에 대한 list__each 보이기
+    $('.slider__img').click(function() {
+        // 해당하는 클래스에 대한 data-filter-value 값 가져오기
+        var filterValue = $(this).find('img').attr('data-filter-value');
+        // 해당하는 클래스에 대한 list__each 보이기
+        $('.list__each' + filterValue).show().css({
+            'opacity': 0,
+            'width': 0,
+            // 'margin': 0,
+            // 'padding': 0,
+            'border': 0,
+        }).animate({
+            'opacity': 1,
+            'width': '240px',
+            // 'margin': '20px',
+            // 'padding': '0px',
+            
+        }, 800, function() {
+            $(this).css({
+                'opacity': '',
+                'width': '',
+                // 'margin': '',
+                // 'padding': '',
+                'border': '',
+            });
+        });
+        // 해당하지 않는 클래스에 대한 list__each 숨기기
+        $('.list__each:not(' + filterValue + ')').animate({
+            'opacity': 0,
+            'width': 0,
+            'margin': 0,
+            'padding': 0
+        }, 200, function() {
+            $(this).hide();
+            $(this).css({
+                'opacity': '',
+                'width': '',
+                'margin': '',
+                'padding': ''
+            });
+        });
+    });
+});
+
+        
+        
+
+
+    </script>
+</body>
+</html>

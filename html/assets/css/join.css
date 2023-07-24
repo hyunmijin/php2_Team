@@ -1,0 +1,82 @@
+body {
+    background-color: #FFF4FE;
+}
+/* join title */
+.join__title{
+    
+}
+/* join__form */
+.join__inner {
+    /* padding: 5% 0; */
+    
+}
+.join__inner h2 {
+    padding: 40px 0 20px 0px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+} 
+.join__inner p {
+    padding-bottom: 40px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 300;
+}
+.join__form {
+    /* padding: 10% 20%; */
+    display: inline-block;
+    width: 100%;
+}
+.join__form div {
+    /* margin-bottom: 3em; */
+    /* justify-content: center; */
+    height: 40px;
+    margin-bottom: 25px;
+    background-color: #fff;
+    border: 1px solid #F06171;
+    border-radius: 5px;
+}
+.join__form div label {
+    /* display: block;
+    margin-bottom: 2px;
+    font-size: 1.2em; */
+}
+.joinChkmsg{
+    text-align: left !important;
+    font-size: 0.8rem !important;
+    margin-top: 8px;
+}
+.joinChkmsg.green{
+    color: rgb(0, 185, 124);
+}
+.joinChkmsg.red{
+    color: #F06171;
+}
+
+/* media */
+@media (max-width: 600px){
+    .intro__inner.center .intro__text {
+        font-size: 1rem;
+        padding: 0;
+    }
+    .join__form {
+        padding: 5% 10% 5% 10%;
+    }
+    .join__inner h2 {
+        font-size: 24px;
+    }
+    .join__form div label {
+        font-size: 1rem;
+    }
+    .join__form div input {
+        padding: 0.6em 1em;
+        font-size: 1rem;
+    }
+    .join__form button {
+        margin: 2em auto;
+        font-size: 1.2rem;
+    }
+    .join__form div {
+        margin-bottom: 2em;
+    }
+}

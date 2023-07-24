@@ -1,0 +1,144 @@
+
+
+#board__header {
+    width: 100%;
+    display: flex;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    justify-content: space-between;
+    font-size: 25px;
+}
+#board__header .active a{
+    padding: 5px 30px;
+    background-color: #F06171;
+    color: #fff ;
+    border-radius: 10px;
+    /* padding:  0px 40px; */
+    
+}
+.notice__inner {
+    margin: 0 auto;
+    max-width: 1270px;
+}
+.notice__title h1{
+    font-size: 30px;
+    text-align: center;
+}
+.notice__search{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.notice__search .left{
+    width: 40%;
+}
+.notice__search .left em{
+    color: #F797A2;
+}
+.notice__search .right{
+    width: 60%;
+    text-align: right;
+}
+.notice__search .right input{
+    border: 1px solid #F797A2;
+    background-color: var(--color__white);
+    padding: 7px 30px;
+    border-radius: 5px;
+    height: 42px;
+}
+
+.notice__tables {
+        /* margin-top: 10px; */
+    margin-bottom: 20px;
+    text-align: center;
+    
+    border-bottom: 2px solid #F06171;
+}
+.notice__tables table th{
+    background-color: #F797A2;
+    padding: 15px 5px;
+    border-bottom: 1px solid #F06171;
+}
+.notice__tables table tr:hover{
+    background-color: #F797A2;
+}
+.notice__tables table td{
+    padding: 15px 5px;
+    border-bottom: 1px solid #F06171;
+}
+.notice__tables table td a:hover{
+    text-decoration: underline;
+    text-underline-position: under;
+}
+.notice__pages{
+    margin-top: 25px;
+}
+.notice__pages ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+.notice__pages li a{
+    padding: 10px 20px;
+    margin-left: -1px;
+    color:  var(--bg__gray3);
+}
+
+.notice__pages li.active a{
+    font-weight: 700;
+    color: var(--color__black);
+}
+.notice__pages li:hover a{
+    background-color:  #F797A2;
+    color:  var(--color__white) !important;
+    font-weight: 700;
+}
+
+/* 상세보기 부분 */
+
+.board__inner {
+    max-width: 1270px;
+    margin: 0 auto;
+}
+
+.board__inner h2 {
+    width: 1270px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.notice__title h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.bord__view {
+    margin-top: 40px;
+    border-top: 2px solid var(--color__black);
+    border-bottom: 2px solid var(--color__black);
+}
+
+.bord__view table td,
+.bord__view table tr {
+    padding: 15px;
+    border-bottom: 1px solid var(--color__black);
+}
+
+.bord__view table tr:last-child td {
+    height: 500px;
+    vertical-align: top;
+}
+
+.bord__view table th {
+    background-color: #F797A2;
+    font-weight: 500;
+}
+
+.board__btn {
+    margin: 40px 0;
+    text-align: right;
+}
+.right a{
+    color: #fff;
+}

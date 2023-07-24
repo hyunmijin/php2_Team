@@ -1,0 +1,121 @@
+.login__inner {
+    max-width: 500px;
+    width: 100%;
+    padding: 100px 0;
+    text-align: center;
+    margin: 0 auto;
+}
+.login__inner > h2 {
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+.login__inner > p {
+    font-size: 20px;
+    font-weight: 300;
+}
+.login__form {
+    margin: 50px 0 30px;
+    padding: 50px 0;
+    text-align: left;
+}
+.login__form input {
+    margin-bottom: 10px;
+}
+.login__footer {
+    text-align: left;
+    font-weight: 300;
+}
+.login__footer a {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.kakao {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    /* background-color: #666; */
+    align-items: center;
+    border-top: 1px solid #F06171;
+    border-bottom: 1px solid #F06171;
+    margin-bottom: 20px;  
+}
+.kakao::before {
+    content: url(../img/kakao.png);
+}
+.kakao p {
+    margin-left: 5px;
+    font-size: 18px;
+    color: #7e7e7e;
+}
+.find3 {
+    display: flex;
+    color: #7e7e7e;
+    justify-content: space-between;
+    padding: 20px 80px 3px 80px;
+    margin-bottom: 70px;
+    padding-bottom: 20px;
+}
+.find {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 135px 3px 137px;
+    margin-bottom: 70px;
+    border-bottom: 1px solid #F06171;
+    border-top: 1px solid #F06171;
+    padding-bottom: 20px;
+}
+.find a {
+    
+    color: #7e7e7e;
+    position: relative;
+}
+.find3 a {
+    
+    color: #7e7e7e;
+    position: relative;
+}
+.find a:nth-child(2):before {
+    position: absolute;
+    content: "|";
+    left: -12px;
+}
+.find a:nth-child(3):before {
+    position: absolute;
+    content: "|";
+    left: -12px;
+}
+.find3 a:nth-child(2):before {
+    position: absolute;
+    content: "|";
+    left: -12px;
+}
+.find3 a:nth-child(3):before {
+    position: absolute;
+    content: "|";
+    left: -12px;
+}
+.passwordfind {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 141px 3px 143px;
+    margin-bottom: 70px;
+    border-bottom: 1px solid #F06171;
+    border-top: 1px solid #F06171;
+    padding-bottom: 20px;
+}
+.passwordfind a {
+    
+    color: #7e7e7e;
+    position: relative;
+}
+.passwordfind a:nth-child(2):before {
+    position: absolute;
+    content: "|";
+    left: -12px;
+}
+.passwordfind a:nth-child(3):before {
+    position: absolute;
+    content: "|";
+    left: -12px;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.toggle__type {
+			position: relative;
+			display: inline-block;
+			width: 60px;
+			height: 34px;
+		}
+
+		.toggle__type input {
+			display: none;
+		}
+
+		.toggle__info {
+			position: absolute;
+			cursor: pointer;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			border: 1px solid #5A5A5A;
+			transition: .4s;
+			border-radius: 34px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.toggle__type input:checked+.toggle__info {
+			border: 0;
+			background-color: #F06171;
+		}
+
+		.toggle__type .toggle__info:hover {
+			background-color: #F797A2;
+			border: 0;
+		}
+	</style>
+</head>
+
+<body>
+	<label class="toggle__type">
+		<input type="checkbox">
+		<span class="toggle__info">민감성</span>
+	</label>
+	<script>
+		const toggle = document.querySelector('.toggle input[type="checkbox"]');
+		toggle.addEventListener('change', function () {
+			if (this.checked) {
+				// 토글이 켜질 때 실행할 코드
+				// input box에 값을 넣어줘야함
+			} else {
+				// 토글이 꺼질 때 실행할 코드
+				// input box에 값을 빼줘야함
+			}
+		});
+
+
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화장품 등록한 목록 보기</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        .list__inner {
+            width: calc(100% - 34vw);
+            margin: 80px auto 0px auto;
+            /* background-color: #fff; */
+        }
+        .list__inner > h2 {
+            margin-bottom: 40px;
+            font-size: 30px;
+            font-weight: 700;
+            text-align: center;
+            color: #F06171;
+        }
+        .section__img {
+            min-width: 1000px;
+            margin-bottom: 80px;
+        }
+        .list {
+            width: 100%;
+            /* padding-bottom: 100px; */
+            margin: 0 auto 0 auto;
+            /* background-color: #fff; */
+            display: flex;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+        }
+        .list__img img{
+            /* border-radius: 15px;
+            padding: 10px */
+            cursor: pointer;
+        }
+        .list__each {
+            display: inline-block;
+            min-width: 251px;
+            width: 20vw;
+            margin: 0px 0.6vw 60px 0.6vw;
+            background-color: rgba(247, 151, 162, 0.07);
+            /* border: 1px solid #000000; */
+        }
+       
+        .list:nth-last-child(1) {
+            /* margin-bottom: 100px; */
+        }
+        
+    </style>
+
+</head>
+<body>
+    <header id="header">
+        <div class="header__inner">
+            <div class="kategorie">
+                <div class="kategorie__menu">
+                    <img src="assets/img/kategorie.png" alt="">
+                </div>
+                <ul>
+                    <li><a href="#">기초</a></li>
+                    <li><a href="#">마스크팩</a></li>
+                    <li><a href="#">선케어</a></li>
+                    <li><a href="#">클렌징</a></li>
+                    <li><a href="#">메이크업</a></li>
+                    <li><a href="#">헤어</a></li>
+                    <li><a href="#">바디</a></li>
+                    <li><a href="#">커뮤니티</a></li>
+                </ul>
+            </div>
+            <div class="logo">
+                <h1>
+                    <a href="#"></a>
+                </h1>
+            </div>
+            <div class="user">
+                <a href="#">
+                    <img src="assets/img/user.png" alt="">
+                </a>
+                <ul>
+                    <li><a href="#">마이페이지</a></li>
+                    <li><a href="#">로그아웃</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <!-- //header -->
+    <div id="board__header" class="mt100" >
+        <div class="active"><a href="trendsBoard.html">뷰티트렌드</a></div>        <!-- news-->
+        <div><a href="shareBoard.html">공유게시판</a></div>      <!-- share-->
+        <div><a href="boardNotice.html">공지사항</a></div>        <!-- notice-->
+        <div><a href="FAQ.html">FAQ</a></div>            <!-- faq-->
+    </div>
+    <!-- board__header -->
+
+    <div class="list__inner">
+        <div class="section__img">
+            <img src="assets/img/boardimg_01.png" alt="">
+        </div>
+        <h2>#뷰티트렌드</h2>
+        <div class="list">
+            <!-- list__each -->
+            <div class="list__each">
+                <div class="list__img">
+                    <img src="assets/img/list__lipstick.png" alt="커뮤니티이미지">
+                </div>
+            </div>
+            <!-- //list__each -->
+            
+            <!-- list__each -->
+            <div class="list__each">
+                <div class="list__img">
+                    <img src="assets/img/list__shampoo.png" alt="커뮤니티이미지">
+                </div>
+            </div>
+            <!-- //list__each -->
+
+            <!-- list__each -->
+            <div class="list__each cleansing">
+                <div class="list__img">
+                    <img src="assets/img/list__cleansing.png" alt="커뮤니티이미지">
+                </div>
+            </div>
+            <!-- //list__each -->
+
+            <!-- list__each -->
+            <div class="list__each">
+                <div class="list__img">
+                    <img src="assets/img/list__mask.png" alt="커뮤니티이미지">
+                </div>
+            </div>
+            <!-- //list__each -->
+
+            <!-- list__each -->
+            <div class="list__each">
+                <div class="list__img">
+                    <img src="assets/img/community09.png" alt="커뮤니티이미지">
+                </div>
+            </div>
+            <!-- //list__each -->
+
+            <!-- list__each -->
+            <div class="list__each">
+                <div class="list__img">
+                    <img src="assets/img/list__sunscreen.png" alt="커뮤니티이미지">
+                </div>
+            </div>
+            <!-- //list__each -->
+
+            <!-- list__each -->
+            <div class="list__each">
+                <div class="list__img">
+                    <img src="assets/img/list__cream.png" alt="커뮤니티이미지">
+                </div>
+            </div>
+            <!-- //list__each -->
+
+            <!-- list__each -->
+            <div class="list__each">
+                <div class="list__img">
+                    <img src="assets/img/list__lipstick.png" alt="커뮤니티이미지">
+                </div>
+            </div>
+            <!-- //list__each -->
+            
+            <!-- list__each -->
+            <div class="list__each">
+                <div class="list__img">
+                    <img src="assets/img/list__shampoo.png" alt="커뮤니티이미지">
+                </div>
+            </div>
+            <!-- //list__each -->
+
+            <!-- list__each -->
+            <div class="list__each">
+                <div class="list__img">
+                    <img src="assets/img/community10.png" alt="커뮤니티이미지">
+                </div>
+            </div>
+            <!-- //list__each -->
+
+            <!-- list__each -->
+            <div class="list__each">
+                <div class="list__img">
+                    <img src="assets/img/community11.png" alt="커뮤니티이미지">
+                </div>
+            </div>
+            <!-- //list__each -->
+
+            <!-- list__each -->
+            <div class="list__each">
+                <div class="list__img">
+                    <img src="assets/img/community12.png" alt="커뮤니티이미지">
+                </div>
+            </div>
+            <!-- //list__each -->
+
+            <!-- list__each -->
+            <div class="list__each">
+                <div class="list__img">
+                    <img src="assets/img/community13.png" alt="커뮤니티이미지">
+                </div>
+            </div>
+            <!-- //list__each -->
+
+            <!-- list__each -->
+            <div class="list__each">
+                <div class="list__img">
+                    <img src="assets/img/community14.png" alt="커뮤니티이미지">
+                </div>
+            </div>
+            <!-- //list__each -->
+        </div>
+    </div>
+    <div class="notice__pages mb100">
+        <ul>
+            
+            <li><a href="#"><</a></li>
+            <li class="active"> <a  href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">></a></li>
+        
+        </ul>
+    </div>
+
+    <footer id="footer">
+        <div class="footer__inner">
+            <div class="logo2">
+                <h1>ABB
+                    <p>COMMUNITY</p>
+                </h1>
+
+            </div>
+            <div class="fot">
+                <div class="nav">
+                    <ul>
+                        <li>뉴스보기</li>
+                        <li>공유게시판</li>
+                        <li>정보보기</li>
+                        <li>FAQ</li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <p>COPYRIGHT©ABB</p>
+                    <p>ALL RIGHTS RESERVED</p>
+                </div>
+            </div>
+        </div> 
+    </footer>
+    <!-- //footer -->
+</body>
+</html>
